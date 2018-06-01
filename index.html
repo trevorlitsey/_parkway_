@@ -41,8 +41,8 @@
 		const video = document.querySelector('.vid');
 		video.loop = true;
 
-		video.addEventListener('click', () => video.play());
-		video.addEventListener('touchstart', () => video.play());
+		window.addEventListener('click', () => video.play());
+		window.addEventListener('touchstart', () => video.play());
 	</script>
 
 </body>
