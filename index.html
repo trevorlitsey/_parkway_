@@ -10,8 +10,8 @@
 
 <body class="background--black">
 
-	<video class="vid">
-		<source src="img/ParkwayHomePage.mp4" />
+	<video class="vid" loop autoplay preload>
+		<source poster="img/screenshot.png" src="img/ParkwayHomePage.mp4" type="video/mp4" />
 	</video>
 
 	<nav class="fade-in">
@@ -20,8 +20,8 @@
 			</div>
 		</a>
 		<div class="links">
-			<a class="item" href="/news">News</a>
-			<a class="item" href="/booking">Booking/Event Inquiries</a>
+			<a class="item" href="/news">About</a>
+			<a class="item" href="/booking">Booking/Events</a>
 			<div class="socials">
 				<a target="_blank" href="https://www.facebook.com/TheParkwayMPLS/" class="facebook"></a>
 				<a target="_blank" href="https://www.instagram.com/theparkwaympls/" class="insta"></a>
@@ -30,20 +30,19 @@
 		</div>
 	</nav>
 
-	<form class="newsletter fade-in">
-		<input type="text" placeholder="email ..." />
-		<button>Sign Up For Newsletter</button>
+	<!-- Begin MailChimp Signup Form -->
+	<form class="newsletter" action="https://theparkwaytheater.us18.list-manage.com/subscribe/post?u=e333b75f58ca18647def1e90a&amp;id=89d8eff1b7"
+	 method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+		<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+		<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+		<div style="position: absolute; left: -5000px;" aria-hidden="true">
+			<input type="text" name="b_e333b75f58ca18647def1e90a_89d8eff1b7" tabindex="-1" value="">
+		</div>
+		<button type="submit" name="Sign Up For Newsletter" class="button">Sign Up For Newsletter</button>
 	</form>
+	<!--End mc_embed_signup-->
 
 	<script src="scripts.js"></script>
-
-	<script>
-		const video = document.querySelector('.vid');
-		video.loop = true;
-
-		window.addEventListener('click', () => video.play());
-		window.addEventListener('touchstart', () => video.play());
-	</script>
 
 </body>
 

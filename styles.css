@@ -95,6 +95,7 @@ nav {
   align-items: flex-end;
   padding: 30px;
   color: white;
+  text-shadow: 0 4px 37px black;
 }
 
 .fade-in {
@@ -113,6 +114,7 @@ nav .logo {
   margin-bottom: -10px;
   width: 250px;
   height: 70px;
+  filter: drop-shadow(0 4px 37px black);
 }
 
 nav .links {
@@ -146,6 +148,7 @@ nav .links a.item:hover {
   margin-right: 10px;
   background-position: center;
   background-size: contain;
+  filter: drop-shadow(0 4px 37px black);
 }
 
 .facebook {
@@ -189,7 +192,8 @@ nav .links a.item:hover {
 /*** index newsletter ****/
 .newsletter {
   position: absolute;
-  bottom: 0;
+  bottom: -40;
+  right: 10;
   display: inline-flex;
 }
 
@@ -207,6 +211,11 @@ nav .links a.item:hover {
   background: none;
   margin-left: 2px;
   font-size: 16px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.newsletter button:hover {
+  color: black;
 }
 
 @media (max-width: 500px) {
