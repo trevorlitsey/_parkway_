@@ -1,0 +1,195 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="../styles.css">
+	<title>Booking</title>
+</head>
+
+<body>
+
+	<div class="background"></div>
+
+	<nav>
+		<a href="/">
+			<div class="logo">
+			</div>
+		</a>
+		<div class="links">
+			<a class="item" href="/news">News</a>
+			<a class="item is-active" href="/booking">Booking/Event Inquiries</a>
+			<div class="socials">
+				<a target="_blank" href="https://www.facebook.com/TheParkwayMPLS/" class="facebook"></a>
+				<a target="_blank" href="https://www.instagram.com/theparkwaympls/" class="insta"></a>
+				<a target="_blank" href="https://twitter.com/theparkwaympls" class="twitter"></a>
+			</div>
+		</div>
+	</nav>
+
+	<form class="background-white" name="Booking/Event Inquiry" method="POST" netlify>
+		<h1 class="title">The Parkway Theater Booking/Event Inquiry</h1>
+		<p class="subtitle">Please fill out the form below or contact
+			<a href="mailto:patrick@theparkwaytheater.com">patrick@theparkwaytheater.com</a> with the information requested below.</p>
+
+		<!-- Name -->
+		<div class="field">
+			<label for="name">Contact Name:
+				<br />
+			</label>
+			<input type="text" name="name" required />
+		</div>
+
+		<!-- Email -->
+		<div class="field">
+			<label for="email">Email address:
+				<br />
+			</label>
+			<input type="email" name="email" required/>
+		</div>
+
+		<!-- Phone number -->
+		<div class="field">
+			<label for="phone">Phone:
+				<br />
+			</label>
+			<input type="text" name="phone" />
+		</div>
+
+		<!-- group/Org -->
+		<div class="field">
+			<label for="organization">Group/Organization:
+				<br />
+			</label>
+			<input type="text" name="organization" />
+		</div>
+
+		<!-- Prospective dates -->
+		<div class="field">
+			<label for="dates">Prospective dates:
+				<br />
+			</label>
+			<input type="text" name="prospective-dates" placeholder="MM/DD/YYYY" required/>
+		</div>
+
+		<div class="field">
+			<label for="alt-dates">Would you consider alternate dates?</label>
+			<div>
+				<label for="yes">
+					<input type="radio" name="would-consider-alt-date" value="Yes"> Yes
+				</label>
+
+				<label for="no">
+					<input type="radio" name="would-consider-alt-date" value="No"> No
+				</label>
+			</div>
+		</div>
+
+		<!-- Full or half day -->
+		<div class="field">
+			<label for="Full or Half Day">Would this event be a half or full day?</label>
+			<div>
+				<label for="10am-to-4pm">
+					<input type="radio" name="full-or-half-day" value="Early Half"> Early Half Day: 10am to 4pm</label>
+
+				<label for="4pm-to-1am">
+					<input type="radio" name="full-or-half-day" value="Late Half"> Late Half Day: 4pm to 1am</label>
+
+				<label for="10am-to-1am">
+					<input type="radio" name="full-or-half-day" value="Full"> Full Day: 10am to 1am</label>
+			</div>
+		</div>
+
+		<!-- Age restrictions -->
+		<div class="field">
+			<label for="age-restrictions">Age Restriction?</label>
+			<div>
+				<label for="all-ages">
+					<input type="radio" name="age-restrictions" value="All Ages"> All ages</label>
+
+				<label for="18-and-up">
+					<input type="radio" name="age-restrictions" value="18+"> 18+
+				</label>
+
+				<label for="21-and-up">
+					<input type="radio" name="age-restrictions" value="21+"> 21+
+				</label>
+			</div>
+		</div>
+
+		<!-- Alcohol -->
+		<div class="field">
+			<label for="alcohol">Would this be an alcohol free event?</label>
+			<div>
+				<label for="Yes">
+					<input type="radio" name="alcohol" value="Yes"> Yes
+				</label>
+
+				<label for="No">
+					<input type="radio" name="alcohol" value="No"> No
+				</label>
+			</div>
+		</div>
+
+		<!-- Production -->
+		<div class="field">
+			<label for="equipment-needs">Would your event require any of the below equipment/production assistance?</label>
+			<div>
+
+				<label for="sound-system">
+					<input type="checkbox" name="sound-system" value="Yes"> Sound System
+				</label>
+
+				<label for="sound-engineer">
+					<input type="checkbox" name="sound-engineer" value="Yes"> Sound Engineer
+				</label>
+
+				<label for="digital-projector">
+					<input type="checkbox" name="digital-projector" value="Yes"> Digital Projector (with or without operator)</label>
+
+				<label for="35mm-projector">
+					<input type="checkbox" name="35mm-projector" value="Yes"> 35mm Projector + Projectionist</label>
+
+				<label for="stage-lighting">
+					<input type="checkbox" name="stage-lighting" value="Yes"> Stage Lighting</label>
+
+				<label for="valet">
+					<input type="checkbox" name="valet" value="Yes"> Valet Parking</label>
+
+			</div>
+		</div>
+
+		<!-- Non-profit -->
+		<div class="field">
+			<label for="alcohol">Are you a Non-Profit or Community Based Organization?</label>
+			<div>
+				<label for="Yes">
+					<input type="radio" name="non-profit" value="Yes"> Yes
+				</label>
+
+				<label for="No">
+					<input type="radio" name="non-profit" value="No"> No
+				</label>
+			</div>
+		</div>
+
+		<!-- Description -->
+		<div class="field">
+			<label for="description">
+				Please provide a short description of your event with any relevant links, questions, or concerns:
+				<br />
+			</label>
+			<textarea name="message"></textarea>
+		</div>
+
+		<div class="field">
+			<button type="submit">Send</button>
+		</div>
+	</form>
+
+	<script src="../scripts.js"></script>
+
+</body>
+
+</html>
