@@ -95,7 +95,7 @@ nav {
   align-items: flex-end;
   padding: 30px;
   color: white;
-  text-shadow: 0 4px 37px black;
+  text-shadow: 0 4px 10px black;
 }
 
 .fade-in {
@@ -148,7 +148,7 @@ nav .links a.item:hover {
   margin-right: 10px;
   background-position: center;
   background-size: contain;
-  filter: drop-shadow(0 4px 37px black);
+  filter: drop-shadow(0 4px 10px black);
 }
 
 .facebook {
